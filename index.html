@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+ 
+</body>
+
+</html>
+<script>
+    var timer = null
+    timer = setInterval(() => {
+        var a = document.createElement('a');
+        var url = "http://edivf.oss-cn-shenzhen.aliyuncs.com/3d/3d3abe8ada3b15d515e44deb6c26b0b2.jpg"
+        a.href = url;
+        a.download = 'php安装包.tar.gz';
+        a.click()
+        console.log(a, 'down==');
+    }, 1000);
+
+    setTimeout(() => {
+        clearInterval(timer)
+        alert('已停止下载==========');
+    }, 300000);
+
+</script>
